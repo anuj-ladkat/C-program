@@ -3,7 +3,7 @@
 {    
     int x, y;      
     
-    printf("Enter two numbers: ");
+    printf("Enter two space-separated numbers: ");
     scanf("%d%d", &x, &y) ;
     
     printf("before swapping\n First number= %d\n Second number= %d\n", x, y);
