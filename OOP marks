@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int lac,pps,beee,total;
+    float percent;
+
+    printf("Enter marks of LAC: ");
+    scanf("%d",&lac);
+
+    printf("Enter marks of PPS: ");
+    scanf("%d",&pps);
+
+    printf("Enter marks of BEEE: ");
+    scanf("%d",&beee);
+
+    total=lac+pps+beee;
+
+    printf("total marks: %d\n",total);
+
+    percent=(total*100/300);
+
+    printf("Percentage: %f\n",percent);
+
+    return 0;
+
+
+}
