@@ -1,26 +1,42 @@
 #include<stdio.h>
 int main()
 {
-    int lac,pps,beee,total;
+    int lac,pps,beee,total,i;
     float percent;
 
-    printf("Enter marks of LAC: ");
-    scanf("%d",&lac);
+    for(i=1;i<=3;i++)
+    {
+        printf("Enter marks of LAC: ");
+        scanf("%d",&lac);
 
-    printf("Enter marks of PPS: ");
-    scanf("%d",&pps);
+        printf("Enter marks of PPS: ");
+        scanf("%d",&pps);
 
-    printf("Enter marks of BEEE: ");
-    scanf("%d",&beee);
+        printf("Enter marks of BEEE: ");
+        scanf("%d",&beee);
 
-    total=lac+pps+beee;
+        total=lac+pps+beee;
 
-    printf("total marks: %d\n",total);
+        printf("total marks: %d\n",total);
 
-    percent=(total*100/300);
+        percent=(total*100/300);
 
-    printf("Percentage: %f\n",percent);
-
+        printf("Percentage: %f\n",percent);
+    
+    if(percent>=80)
+    {
+        printf("Grade A\n");
+    }else if(percent<=79 && percent>=60)
+    {
+        printf("Grade B\n");
+    }else if(percent<=59 && percent>=40)
+    {
+        printf("PASS\n");
+    }else
+    {
+        printf("FAIL\n");
+    }
+    }
     return 0;
 
 
